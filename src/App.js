@@ -1,5 +1,8 @@
 import React, { useContext } from 'react'
+import Hero from './components/Hero';
+import Layout from './components/Layout';
 import { ThemeContext } from './components/Theme';
+
 
 const App = () => {
 
@@ -7,7 +10,9 @@ const App = () => {
 
   return (
     <div className={`${darkMode ? "dark" : ""}`}>
-      Hello
+      <Layout>
+        <Hero />
+      </Layout>
     </div>
   );
 }
