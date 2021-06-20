@@ -13,7 +13,7 @@ const Project = ({ title, description, images, stacks, github, website }) => {
     const [ darkMode, toggleMode ] = useContext(ThemeContext)
 
     return (
-        <div className="w-full md:w-4/5 dark:bg-gray-600  shadow-md mt-8 rounded-md transition duration-500 ease-in-out transform  hover:scale-105">
+        <div className="w-full dark:bg-gray-600  shadow-md mt-8 rounded-md transition duration-500 ease-in-out transform  hover:scale-105">
             <div className="relative" onMouseEnter={() => setShowButton(true)} onMouseLeave={() => setShowButton(false)} >
                 <img
                     className="rounded-t-md"

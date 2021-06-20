@@ -66,7 +66,7 @@ export const projects = [
     },
     {
         title: 'Movie Watchlist',
-        description: "Check out upcoming, latest and most rated movies. ",
+        description: "Check out upcoming, latest and most rated movies. Save favorite movies on your watchlist.",
         images: ['/images/2.png', '/images/3.png'] ,
         stacks: ['ReactJS', 'Bootstrap', 'Redux', 'ReactRouterDom'],
         github: [
@@ -77,7 +77,7 @@ export const projects = [
              
         ],
         website: {
-            name: 'Movie Wtachlist',
+            name: 'Movie Watchlist',
             link: 'https://moviewatchlist-codingchallenge.web.app/',
         }, 
         id: 3,

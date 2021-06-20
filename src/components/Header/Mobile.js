@@ -3,6 +3,7 @@ import { Fragment, useState } from 'react'
 import Logo from './Logo';
 import Mode from './Mode';
 import { links } from './links'
+import { Link } from 'react-scroll'
 
 const Mobile = () => {
 
@@ -15,7 +16,7 @@ const Mobile = () => {
                     <>
                         <div className="flex flex-row items-center justify-between">
                             <Disclosure.Button className="flex focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                                <svg onClick={() => setShow(!show)} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-800 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg onClick={() => setShow(!show)} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-800 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
 
@@ -36,11 +37,21 @@ const Mobile = () => {
                                 >
                                     <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
                                         <ul className="text-lg justify-center">
-                                            {links.map(link => {
+                                            {links.map(item => {
                                                 return (
-                                                    <li key={link}>
-                                                        <a href={link} onClick={() => setShow(false)} className="hover:text-gray-400">Projects</a>
+                                                    <li key={item.name}>
+                                                        <Link
+                                                            onClick={() => setShow(false)}
+                                                            className="cursor-pointer hover:text-gray-200 text-gray-300"
+                                                            activeClass="active"
+                                                            to={item.link}
+                                                            spy={true}
+                                                            smooth={true}
+                                                            offset={0}
+                                                            duration={1000}
+                                                        >{item.name}</Link>
                                                     </li>
+
                                                 )
                                             })}
                                         </ul>

@@ -6,10 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import ThemeProvider from './components/Theme';
 
 
+
 ReactDOM.render(
+
   <ThemeProvider>
-    <App />
+      <App />
   </ThemeProvider>
+
   ,
   document.getElementById('root')
 );

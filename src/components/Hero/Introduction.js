@@ -1,4 +1,5 @@
 import React from 'react'
+import { DiGithubBadge } from "react-icons/di";
 
 const Introduction = () => {
     return (
@@ -15,9 +16,13 @@ const Introduction = () => {
                 </div>
                 <button
                     type="button"
-                    className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 rounded-2xl text-gray-300 font-semibold px-6 py-4 md:px-8 md:text-xl"
+                    className="focus:outline-none bg-gradient-to-r from-green-500 to-blue-600 hover:from-pink-500 hover:to-yellow-500 rounded-2xl text-gray-300 font-semibold px-6 py-4 md:px-8 md:text-xl"
                 >
-                    Learn More
+                    <div className="flex items-center">
+                        <DiGithubBadge size={35} />
+                        <p>Check My Github</p>
+                    </div>
+
                 </button>
             </div>
         </div>

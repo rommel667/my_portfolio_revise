@@ -6,15 +6,16 @@ import Technologies from './components/Technologies';
 import { ThemeContext } from './components/Theme';
 
 
+
 const App = () => {
 
-  const [ darkMode, toggleMode ] = useContext(ThemeContext)
+  const [darkMode, toggleMode] = useContext(ThemeContext)
 
   return (
     <div className={`${darkMode ? "dark" : ""}`}>
       <Layout>
         <Hero />
-        <Projects />
+        <Projects/>
         <Technologies />
       </Layout>
     </div>
