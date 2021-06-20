@@ -10,17 +10,18 @@ const Menu = () => {
 
             {links.map(item => {
                 return (
-                   
-                        <Link
-                        className="cursor-pointer"
-                            activeClass="active"
-                            to={item.link}
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={1000}
-                        >{item.name}</Link>
-                   
+
+                    <Link
+                        key={item.link}
+                        className="cursor-pointer hover:text-gray-500 dark:hover:text-gray-200"
+                        activeClass="active"
+                        to={item.link}
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={1000}
+                    >{item.name}</Link>
+
                 )
             })}
         </ul>

@@ -14,13 +14,12 @@ const Footer = () => {
                     <Mobile/>
                     <Socials />
                 </div>
-                <div className="md:hidden flex flex-row justify-between">
+                <div className="md:hidden flex flex-row justify-between text-sm sm:text-base">
                     <div className="flex flex-col gap-3">
                         <Email />
                         <Mobile />
                     </div>
                     <Socials />
-
                 </div>
 
             </div>

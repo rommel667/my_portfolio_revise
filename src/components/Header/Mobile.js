@@ -35,14 +35,14 @@ const Mobile = () => {
                                     leaveFrom="opacity-100 scale-100"
                                     leaveTo="opacity-0 scale-95"
                                 >
-                                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
                                         <ul className="text-lg justify-center">
                                             {links.map(item => {
                                                 return (
                                                     <li key={item.name}>
                                                         <Link
                                                             onClick={() => setShow(false)}
-                                                            className="cursor-pointer hover:text-gray-200 text-gray-300"
+                                                            className="cursor-pointer hover:text-gray-600 dark:hover:text-gray-200 text-gray-700 dark:text-gray-300"
                                                             activeClass="active"
                                                             to={item.link}
                                                             spy={true}
