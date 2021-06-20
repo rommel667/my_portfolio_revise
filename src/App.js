@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ThemeContext } from './components/Theme';
 
 const App = () => {
+
+  const [ darkMode, toggleMode ] = useContext(ThemeContext)
+
   return (
-    <div className="text-red-500">
+    <div className={`${darkMode ? "dark" : ""}`}>
       Hello
     </div>
   );
