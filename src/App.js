@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import Hero from './components/Hero';
 import Layout from './components/Layout';
 import Projects from './components/Projects';
+import Technologies from './components/Technologies';
 import { ThemeContext } from './components/Theme';
 
 
@@ -14,6 +15,7 @@ const App = () => {
       <Layout>
         <Hero />
         <Projects />
+        <Technologies />
       </Layout>
     </div>
   );
