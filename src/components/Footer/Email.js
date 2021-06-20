@@ -11,9 +11,9 @@ const Email = () => {
                 <p>Email Address</p>
             </div>
             <div className="text-gray-600 dark:text-gray-300">
-            <p>rommel667@gmail.com</p>
+                <p>rommel667@gmail.com</p>
             </div>
-            
+
         </div>
 
     )
