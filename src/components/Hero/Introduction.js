@@ -11,8 +11,8 @@ const Introduction = () => {
                 </div>
                 <div className="text-gray-600 dark:text-gray-400 xl:text-2xl lg:text-xl md:text-base tracking-wider leading-loose text-justify space-y-1">
                     <div>A Licensed Electronics Engineer by profession.</div>
+                    <div>A self-taught developer creating web and mobile applications for fun and hopefully make a living out of it.</div>
                     <div>Learning new things and making an idea come to life is my passion.</div>
-                    <div>Creating Web and Mobile application for FUN and hopefully make a living out of it.</div>
                 </div>
                 <button
                     type="button"

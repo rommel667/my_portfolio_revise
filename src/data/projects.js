@@ -48,7 +48,7 @@ export const projects = [
     {
         title: 'InstaLearn Reviewer for Mobile',
         description: "An engineering reviewer for mobile users, data is in sync with the web application so the user can log from phone or from a computer.",
-        images: ['/images/instalearn-web.png'] ,
+        images: ['/images/instalearn-mobile.png', '/images/instalearn-mobile-1.png', '/images/instalearn-mobile-2.png', '/images/instalearn-mobile-3.png'] ,
         stacks: ['ReactNative', 'MongoDB', 'Redux', 'GraphQL', 'Apollo' ],
         github: [
             {

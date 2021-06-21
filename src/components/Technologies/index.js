@@ -5,7 +5,7 @@ import TechGroup from './TechGroup'
 const Technologies = () => {
     return (
         <div id="tech" className="">
-            <div className="text-4xl pt-20 font-semibold text-gray-800 dark:text-gray-200">Technologies</div>
+            <div className="text-4xl pt-20 font-semibold text-gray-600 dark:text-gray-200">Technologies</div>
             <div className="grid lg:grid-cols-3 place-items-center items-start mt-10 gap-10">
                 {technologies.map(group => {
                     return (
